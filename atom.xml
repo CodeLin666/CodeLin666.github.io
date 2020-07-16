@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://codelin666.github.io/"/>
   <updated>2020-07-12T05:45:58.376Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://codelin666.github.io/</id>
   
   <author>
     <name>晓琳</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2020/07/12/hello-world/"/>
-    <id>http://yoursite.com/2020/07/12/hello-world/</id>
+    <link href="https://codelin666.github.io/2020/07/12/hello-world/"/>
+    <id>https://codelin666.github.io/2020/07/12/hello-world/</id>
     <published>2020-07-12T05:45:58.376Z</published>
     <updated>2020-07-12T05:45:58.376Z</updated>
     
