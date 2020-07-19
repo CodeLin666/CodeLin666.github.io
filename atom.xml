@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://codelin666.github.io/"/>
-  <updated>2020-07-12T05:45:58.376Z</updated>
+  <updated>2020-07-19T06:41:43.119Z</updated>
   <id>https://codelin666.github.io/</id>
   
   <author>
@@ -17,19 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://codelin666.github.io/2020/07/12/hello-world/"/>
-    <id>https://codelin666.github.io/2020/07/12/hello-world/</id>
-    <published>2020-07-12T05:45:58.376Z</published>
-    <updated>2020-07-12T05:45:58.376Z</updated>
+    <title>JAVA中实现Singleton模式</title>
+    <link href="https://codelin666.github.io/2020/07/19/JAVA%E4%B8%AD%E5%AE%9E%E7%8E%B0Singleton%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://codelin666.github.io/2020/07/19/JAVA%E4%B8%AD%E5%AE%9E%E7%8E%B0Singleton%E6%A8%A1%E5%BC%8F/</id>
+    <published>2020-07-19T06:42:00.084Z</published>
+    <updated>2020-07-19T06:41:43.119Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<hr><h2 id="JAVA中实现Singleton模式"><a href="#JAVA中实现Singleton模式" class="headerlink" title="JAVA中实现Singleton模式"></a>JAVA中实现Singleton模式</h2><p>单例模式可以保证系统中，应用该模式的类一个类只有一个实例。即一个类只有一个对象实例。</p><h2 id="单例模式写法"><a href="#单例模式写法" class="headerlink" title="单例模式写法"></a>单例模式写法</h2><h3 id="双重检查Double-Check"><a href="#双重检查Double-Check" class="headerlink" title="双重检查Double-Check"></a>双重检查Double-Check</h3><pre><code>public class Singleton {private static volatile Singleton singleton;private Singleton() {}public static Singleton getInstance() {    if (singleton == null) {        synchronized (Singleton.class) {            if (singleton == null) {                singleton = new Singleton();            }        }    }    return singleton;    }    }</code></pre><p>volatile关键字千万不能掉，禁止指令重排序优化</p><h3 id="静态内部类"><a href="#静态内部类" class="headerlink" title="静态内部类"></a>静态内部类</h3><pre><code>public class Singleton {private Singleton() {}private static class SingletonInstance {    private static final Singleton INSTANCE = new Singleton();}public static Singleton getInstance() {    return SingletonInstance.INSTANCE;}}</code></pre><p>这种方式跟饿汉式方式采用的机制类似，但是可以延迟加载，并且线程安全，推荐使用。类的静态属性只会在第一次加载的时候被初始化，所以这是从JVM底层上保证了线程的安全性。</p><h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><pre><code>public enum Singleton {INSTANCE;public void whateverMethod() {}}</code></pre><p>JDK1.5中添加的枚举来实现单例模式。不仅能避免多线程同步问题，而且还能防止反序列化重新创建新的对象。</p><h3 id="单例模式的优缺点"><a href="#单例模式的优缺点" class="headerlink" title="单例模式的优缺点"></a>单例模式的优缺点</h3><h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><p>系统内存中该类只存在一个对象，节省了系统资源，对于一些需要频繁创建销毁的对象，使用单例模式可以提高系统性能。</p><h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><p> 单例模式一般没有接口，扩展很困难</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;hr&gt;
+&lt;h2 id=&quot;JAVA中实现Singleton模式&quot;&gt;&lt;a href=&quot;#JAVA中实现Singleton模式&quot; class=&quot;headerlink&quot; title=&quot;JAVA中实现Singleton模式&quot;&gt;&lt;/a&gt;JAVA中实现Singleton模式&lt;/h2&gt;&lt;p&gt;单
       
     
     </summary>
