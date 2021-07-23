@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://gitee.com/codelin666/codelin666.git/"/>
+  <link href="https://codelin666.github.io/"/>
   <updated>2021-07-23T06:28:05.177Z</updated>
-  <id>https://gitee.com/codelin666/codelin666.git/</id>
+  <id>https://codelin666.github.io/</id>
   
   <author>
     <name>晓琳</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>淦，跨域问题 </title>
-    <link href="https://gitee.com/codelin666/codelin666.git/2021/05/23/%E6%B7%A6%EF%BC%8C%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98%20/"/>
-    <id>https://gitee.com/codelin666/codelin666.git/2021/05/23/%E6%B7%A6%EF%BC%8C%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98%20/</id>
+    <link href="https://codelin666.github.io/2021/05/23/%E6%B7%A6%EF%BC%8C%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98%20/"/>
+    <id>https://codelin666.github.io/2021/05/23/%E6%B7%A6%EF%BC%8C%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98%20/</id>
     <published>2021-05-23T06:36:00.504Z</published>
     <updated>2021-07-23T06:28:05.177Z</updated>
     
@@ -43,8 +43,8 @@ public void addCorsMappings(CorsRegistry registry)
   
   <entry>
     <title>土到极致就是潮 </title>
-    <link href="https://gitee.com/codelin666/codelin666.git/2021/03/23/%E5%9C%9F%E5%88%B0%E6%9E%81%E8%87%B4%E5%B0%B1%E6%98%AF%E6%BD%AE%20/"/>
-    <id>https://gitee.com/codelin666/codelin666.git/2021/03/23/%E5%9C%9F%E5%88%B0%E6%9E%81%E8%87%B4%E5%B0%B1%E6%98%AF%E6%BD%AE%20/</id>
+    <link href="https://codelin666.github.io/2021/03/23/%E5%9C%9F%E5%88%B0%E6%9E%81%E8%87%B4%E5%B0%B1%E6%98%AF%E6%BD%AE%20/"/>
+    <id>https://codelin666.github.io/2021/03/23/%E5%9C%9F%E5%88%B0%E6%9E%81%E8%87%B4%E5%B0%B1%E6%98%AF%E6%BD%AE%20/</id>
     <published>2021-03-23T06:35:47.749Z</published>
     <updated>2021-07-23T06:30:14.962Z</updated>
     
@@ -69,8 +69,8 @@ public void addCorsMappings(CorsRegistry registry)
   
   <entry>
     <title>Springboot </title>
-    <link href="https://gitee.com/codelin666/codelin666.git/2021/02/23/Springboot%20/"/>
-    <id>https://gitee.com/codelin666/codelin666.git/2021/02/23/Springboot%20/</id>
+    <link href="https://codelin666.github.io/2021/02/23/Springboot%20/"/>
+    <id>https://codelin666.github.io/2021/02/23/Springboot%20/</id>
     <published>2021-02-23T06:35:33.271Z</published>
     <updated>2021-07-23T06:41:07.588Z</updated>
     
@@ -94,8 +94,8 @@ public void addCorsMappings(CorsRegistry registry)
   
   <entry>
     <title>SpringMVC笔记 </title>
-    <link href="https://gitee.com/codelin666/codelin666.git/2021/01/23/SpringMVC%E7%AC%94%E8%AE%B0%20/"/>
-    <id>https://gitee.com/codelin666/codelin666.git/2021/01/23/SpringMVC%E7%AC%94%E8%AE%B0%20/</id>
+    <link href="https://codelin666.github.io/2021/01/23/SpringMVC%E7%AC%94%E8%AE%B0%20/"/>
+    <id>https://codelin666.github.io/2021/01/23/SpringMVC%E7%AC%94%E8%AE%B0%20/</id>
     <published>2021-01-23T06:33:35.256Z</published>
     <updated>2021-07-23T06:10:36.677Z</updated>
     
@@ -117,8 +117,8 @@ public void addCorsMappings(CorsRegistry registry)
   
   <entry>
     <title>linux学习笔记</title>
-    <link href="https://gitee.com/codelin666/codelin666.git/2021/01/10/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://gitee.com/codelin666/codelin666.git/2021/01/10/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <link href="https://codelin666.github.io/2021/01/10/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://codelin666.github.io/2021/01/10/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2021-01-10T01:19:05.050Z</published>
     <updated>2021-01-09T12:31:36.242Z</updated>
     
@@ -141,8 +141,8 @@ public void addCorsMappings(CorsRegistry registry)
   
   <entry>
     <title>设计模式七大原则</title>
-    <link href="https://gitee.com/codelin666/codelin666.git/2020/11/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%83%E5%A4%A7%E5%8E%9F%E5%88%99/"/>
-    <id>https://gitee.com/codelin666/codelin666.git/2020/11/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%83%E5%A4%A7%E5%8E%9F%E5%88%99/</id>
+    <link href="https://codelin666.github.io/2020/11/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%83%E5%A4%A7%E5%8E%9F%E5%88%99/"/>
+    <id>https://codelin666.github.io/2020/11/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%83%E5%A4%A7%E5%8E%9F%E5%88%99/</id>
     <published>2020-11-11T07:40:49.760Z</published>
     <updated>2020-11-11T07:40:49.841Z</updated>
     
@@ -166,8 +166,8 @@ public void addCorsMappings(CorsRegistry registry)
   
   <entry>
     <title>mybatis中使用逆向工程</title>
-    <link href="https://gitee.com/codelin666/codelin666.git/2020/11/11/mybatis%E4%B8%AD%E4%BD%BF%E7%94%A8%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/"/>
-    <id>https://gitee.com/codelin666/codelin666.git/2020/11/11/mybatis%E4%B8%AD%E4%BD%BF%E7%94%A8%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/</id>
+    <link href="https://codelin666.github.io/2020/11/11/mybatis%E4%B8%AD%E4%BD%BF%E7%94%A8%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/"/>
+    <id>https://codelin666.github.io/2020/11/11/mybatis%E4%B8%AD%E4%BD%BF%E7%94%A8%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/</id>
     <published>2020-11-11T06:58:57.000Z</published>
     <updated>2020-11-11T07:11:59.971Z</updated>
     
@@ -190,8 +190,8 @@ public void addCorsMappings(CorsRegistry registry)
   
   <entry>
     <title>JAVA中实现Singleton模式</title>
-    <link href="https://gitee.com/codelin666/codelin666.git/2020/07/19/JAVA%E4%B8%AD%E5%AE%9E%E7%8E%B0Singleton%E6%A8%A1%E5%BC%8F/"/>
-    <id>https://gitee.com/codelin666/codelin666.git/2020/07/19/JAVA%E4%B8%AD%E5%AE%9E%E7%8E%B0Singleton%E6%A8%A1%E5%BC%8F/</id>
+    <link href="https://codelin666.github.io/2020/07/19/JAVA%E4%B8%AD%E5%AE%9E%E7%8E%B0Singleton%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://codelin666.github.io/2020/07/19/JAVA%E4%B8%AD%E5%AE%9E%E7%8E%B0Singleton%E6%A8%A1%E5%BC%8F/</id>
     <published>2020-07-19T06:42:00.084Z</published>
     <updated>2020-07-19T06:41:43.119Z</updated>
     
