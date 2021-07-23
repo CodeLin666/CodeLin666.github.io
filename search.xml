@@ -1550,4 +1550,10 @@ registry.addMapping(&quot;/**&quot;)
 }
 }</code></pre>]]></content>
   </entry>
+  <entry>
+    <title>淦跨域问题</title>
+    <url>/2021/07/23/%E6%B7%A6%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>@Configuration<br>public class CrosConfig implements WebMvcConfigurer {<br>@Override<br>public void addCorsMappings(CorsRegistry registry) {<br>registry.addMapping(“/<em>*”)<br>.allowedOrigins(“</em>“)<br>.allowedMethods(“GET”, “POST”, “DELETE”, “PUT”, “HEAD”, “OPTIONS”)<br>.allowCredentials(true)<br>.maxAge(3600)<br>.allowedHeaders(“*”);<br>}<br>}</p>
+]]></content>
+  </entry>
 </search>
