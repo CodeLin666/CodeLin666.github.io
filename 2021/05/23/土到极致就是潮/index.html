@@ -1,0 +1,261 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>土到极致就是潮 | 晓琳</title><meta name="description" content="土到极致就是潮 一个在线的电子相册，哄女朋友就好使，直接可以发出来 效果不亚于某宝的土味礼物 没服务器也没关系，可以使用github或者gitee的页面托管，我下面的网址就是托管在gitee上了 建立一个文件夹，照片命名并保存 可以生成静态页面，然后就可以访问了 演示地址http:&#x2F;&#x2F;codelin666.gitee.io&#x2F;album &lt;!DOCTYPE html&gt; &lt;html&amp;"><meta name="author" content="晓琳"><meta name="copyright" content="晓琳"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/touxiang.png"><link rel="canonical" href="https://codelin666.github.io/2021/05/23/%E5%9C%9F%E5%88%B0%E6%9E%81%E8%87%B4%E5%B0%B1%E6%98%AF%E6%BD%AE/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="土到极致就是潮"><meta property="og:url" content="https://codelin666.github.io/2021/05/23/%E5%9C%9F%E5%88%B0%E6%9E%81%E8%87%B4%E5%B0%B1%E6%98%AF%E6%BD%AE/"><meta property="og:site_name" content="晓琳"><meta property="og:description" content="土到极致就是潮 一个在线的电子相册，哄女朋友就好使，直接可以发出来 效果不亚于某宝的土味礼物 没服务器也没关系，可以使用github或者gitee的页面托管，我下面的网址就是托管在gitee上了 建立一个文件夹，照片命名并保存 可以生成静态页面，然后就可以访问了 演示地址http:&#x2F;&#x2F;codelin666.gitee.io&#x2F;album &lt;!DOCTYPE html&gt; &lt;html&amp;"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2021-05-23T08:11:40.461Z"><meta property="article:modified_time" content="2021-05-23T08:11:40.461Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="prev" title="淦，跨域问题" href="https://codelin666.github.io/2021/05/23/%E6%B7%A6%EF%BC%8C%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/"><link rel="next" title="Springboot学习" href="https://codelin666.github.io/2021/02/23/Springboot%E5%AD%A6%E4%B9%A0/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2021-05-23 16:11:40'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="晓琳" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/touxiang.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">8</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">晓琳</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">土到极致就是潮</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2021-05-23 16:11:40"><i class="far fa-calendar-alt fa-fw"></i> 发表于 2021-05-23</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2021-05-23 16:11:40"><i class="fas fa-history fa-fw"></i> 更新于 2021-05-23</span></time></div><div class="meta-secondline"> </div><div class="meta-thirdline"><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta__icon"></i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>土到极致就是潮</p>
+<p>一个在线的电子相册，哄女朋友就好使，直接可以发出来</p>
+<p>效果不亚于某宝的土味礼物</p>
+<p>没服务器也没关系，可以使用github或者gitee的页面托管，我下面的网址就是托管在gitee上了</p>
+<p>建立一个文件夹，照片命名并保存</p>
+<p>可以生成静态页面，然后就可以访问了</p>
+<p>演示地址<a href="http://codelin666.gitee.io/album" target="_blank" rel="noopener">http://codelin666.gitee.io/album</a></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot; /&gt;
+&lt;title&gt;电子相册&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+  html{
+  width: 100%;
+  height: 100%;
+}
+.bigbox{
+  width: 10px;
+  height: 10px;
+  margin: 200px 400px;
+  position: relative;
+}
+.box{
+  width:500px;
+  height:300px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-80deg);
+  -webkit-animation: mystyle 15s infinite;
+  animation-timing-function: linear;
+}
+@-webkit-keyframes mystyle{
+  from{transform: rotateX(-180deg) rotateY(-180deg);}
+  to{transform: rotateX(180deg) rotateY(180deg);}
+}
+.box div{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.8;
+  transition: all .4s;
+}
+.bigpic{
+  width: 200px;
+  height: 200px;
+}
+.box .bigfront{
+  transform: rotateY(0deg) translateZ(100px);
+}
+.box .bigback{
+  transform: translateZ(-100px) rotateY(180deg);
+}
+.box .bigleft{
+  transform: rotateY(90deg) translateZ(100px);
+}
+.box .bigright{
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.box .bigtop{
+  transform: rotateX(90deg) translateZ(100px);
+}
+.box .bigbottom{
+  transform: rotateX(-90deg) translateZ(100px);
+}
+.box span{
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: 25px;
+  left: 25px;
+}
+.box .smallpic{
+  width: 140px;
+  height: 140px;
+}
+.box .smallleft{
+  transform: rotateY(90deg) translateZ(70px);
+}
+.box .smallright{
+  transform: rotateY(-90deg) translateZ(70px);
+}
+.box .smalltop{
+  transform: rotateX(90deg) translateZ(70px);
+}
+.box .smallbottom{
+  transform: rotateX(-90deg) translateZ(70px);
+}
+.box .smallfront{
+  transform: rotateY(0deg) translateZ(70px);
+}
+.box .smallback{
+  transform: translateZ(-70px) rotateY(180deg);
+}
+/*:hover 我们之前说过的一个css选择器，能够让鼠标指向的时候触发*/
+.box:hover .bigleft{
+  transform: rotateY(90deg) translateZ(300px);
+}
+.box:hover .bigright{
+  transform: rotateY(-90deg) translateZ(300px);
+}
+.box:hover .bigtop{
+  transform: rotateX(90deg) translateZ(300px);
+}
+.box:hover .bigbottom{
+  transform: rotateX(-90deg) translateZ(300px);
+}
+.box:hover .bigfront{
+  transform: rotateY(0deg) translateZ(300px);
+}
+.box:hover .bigback{
+  transform: translateZ(-300px) rotateY(180deg);
+}
+&lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+&lt;div class=&quot;bigbox&quot;&gt;
+  &lt;div class=&quot;box&quot;&gt;
+&lt;div class=&quot;bigfront&quot;&gt;
+  &lt;img src=&quot;image/1.jpg&quot; class=&quot;bigpic&quot; &gt;
+&lt;/div&gt;
+&lt;div class=&quot;bigback&quot;&gt;
+  &lt;img src=&quot;image/2.jpg&quot; class=&quot;bigpic&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bigleft&quot;&gt;
+  &lt;img src=&quot;image/3.jpg&quot; class=&quot;bigpic&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bigright&quot;&gt;
+  &lt;img src=&quot;image/4.jpg&quot; class=&quot;bigpic&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bigtop&quot;&gt;
+  &lt;img src=&quot;image/5.jpg&quot; class=&quot;bigpic&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bigbottom&quot;&gt;
+  &lt;img src=&quot;image/6.jpg&quot; class=&quot;bigpic&quot;&gt;
+&lt;/div&gt;
+&lt;span class=&quot;smallfront&quot;&gt;
+  &lt;img src=&quot;image/7.jpg&quot; class=&quot;smallpic&quot; /&gt;
+&lt;/span&gt;
+&lt;span class=&quot;smallback&quot;&gt;
+  &lt;img src=&quot;image/8.jpg&quot; class=&quot;smallpic&quot; /&gt;
+&lt;/span&gt;
+&lt;span class=&quot;smallleft&quot;&gt;
+  &lt;img src=&quot;image/9.jpg&quot; class=&quot;smallpic&quot; /&gt;
+&lt;/span&gt;
+&lt;span class=&quot;smallright&quot;&gt;
+  &lt;img src=&quot;image/10.jpg&quot; class=&quot;smallpic&quot; /&gt;
+&lt;/span&gt;
+&lt;span class=&quot;smalltop&quot;&gt;
+  &lt;img src=&quot;image/11.jpg&quot; class=&quot;smallpic&quot; /&gt;
+&lt;/span&gt;
+&lt;span class=&quot;smallbottom&quot;&gt;
+  &lt;img src=&quot;image/12.jpg&quot; class=&quot;smallpic&quot; /&gt;
+&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p>​    </p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">晓琳</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://codelin666.github.io/2021/05/23/%E5%9C%9F%E5%88%B0%E6%9E%81%E8%87%B4%E5%B0%B1%E6%98%AF%E6%BD%AE/">https://codelin666.github.io/2021/05/23/%E5%9C%9F%E5%88%B0%E6%9E%81%E8%87%B4%E5%B0%B1%E6%98%AF%E6%BD%AE/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://codelin666.github.io" target="_blank">晓琳</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/05/23/%E6%B7%A6%EF%BC%8C%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/"><img class="prev-cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">淦，跨域问题</div></div></a></div><div class="next-post pull-right"><a href="/2021/02/23/Springboot%E5%AD%A6%E4%B9%A0/"><img class="next-cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Springboot学习</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 晓琳</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/search/local-search.js"></script></body></html>
